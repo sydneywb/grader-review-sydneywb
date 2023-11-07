@@ -1,0 +1,29 @@
+JUnit version 4.13.2
+.E.E.E
+Time: 1.158
+There were 3 failures:
+1) testMerge(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3481)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:237)
+	at java.base/java.util.ArrayList.grow(ArrayList.java:244)
+	at java.base/java.util.ArrayList.add(ArrayList.java:454)
+	at java.base/java.util.ArrayList.add(ArrayList.java:467)
+	at ListExamples.merge(ListExamples.java:42)
+	at TestListExamples.testMerge(TestListExamples.java:35)
+2) testMergeRightEnd(TestListExamples)
+org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
+	at ListExamples.merge(ListExamples.java:43)
+	at TestListExamples.testMergeRightEnd(TestListExamples.java:19)
+3) testFilter(TestListExamples)
+java.lang.AssertionError: expected:<[MOON, moon, MoOn]> but was:<[MoOn, moon, MOON]>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at TestListExamples.testFilter(TestListExamples.java:28)
+
+FAILURES!!!
+Tests run: 3,  Failures: 3
+
