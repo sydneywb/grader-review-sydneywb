@@ -45,7 +45,6 @@ java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junitResult.txt
 
 if [[ `grep "OK" junitResult.txt` != "" ]]
 then
-    # echo `grep "OK" junitResult.txt`
     echo "SCORE AS PERCENT: 100%"
     exit
 else
